@@ -1,25 +1,20 @@
-# BirdApp :bird: 
+# BirdApp - Avian Audio Identification
 
-Identify bird species from their songs using AI.
+![Project Logo](misc/logo.png) *(optional)*
 
-## Week 1 Progress
-✅ Audio upload API  
-✅ Species identification mock  
-✅ Unit tests
+Identify bird species from their songs using machine learning.
 
-### Quick Start
+## Features
+- 🎵 Audio analysis via Librosa
+- 🐦 Mock species detection (BirdNET integration coming soon)
+- ✅ Tested API endpoints
+
+## Quick Start
 ```bash
-git clone https://github.com/yourname/birdapp
+git clone https://github.com/your_username/birdapp.git
 cd birdapp/backend
 pip install -e .
 uvicorn app.main:app --reload
 
-### Test
-
-# With test audio (from project root)
-http --multipart POST http://localhost:8000/identify-bird/ \
-  audio@backend/tests/test_data/bird_sample.mp3
-
-## Project Tree (Key Files)
-
-tree -I "venv|__pycache__|*.egg-info" --dirsfirst
+API Docs: http://localhost:8000/docs
+Test: pytest tests/ -v
