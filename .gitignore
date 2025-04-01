@@ -1,0 +1,11 @@
+# From https://github.com/github/gitignore/blob/main/Python.gitignore
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.swp
+.DS_Store
+temp_audio.wav  # Ignore temporary audio files
+/venv/
+/backend/birdapp_backend.egg-info/
+*.pyc

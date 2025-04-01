@@ -1,0 +1,6 @@
+flowchart TD
+    A["User records bird sound"] --> B["App sends audio to Python backend"]
+    B --> C["Librosa processes spectrogram"]
+    C --> D["BirdNET predicts species"]
+    D --> E["Supabase fetches bird data"]
+    E --> F["App displays bird name + info"]
